@@ -37,6 +37,9 @@ test:
     - wasm-ctor-eval --help
     - wasm-reduce --help
 
+    - test -f "${PREFIX}/lib/libbinaryen${SHLIB_EXT}"   # [unix]
+    - if not exist %LIBRARY_BIN%\\binaryen.dll" exit 1  # [win]
+
 about:
   home: https://github.com/WebAssembly/binaryen
   license: Apache 2.0
