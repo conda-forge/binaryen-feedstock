@@ -8,6 +8,13 @@ source:
   fn: binaryen-{{ version }}.tar.gz
   url: https://github.com/WebAssembly/binaryen/archive/{{ version }}.tar.gz
   sha256: 4852a676c383efffa368e58f2abf3108fcf02f0e8b6cd3923b0cdc35bc0ee8c9
+  patches:
+    ############################################################
+    # Apply patch to silence Windows casting warnings.         #
+    #                                                          #
+    # xref: https://github.com/WebAssembly/binaryen/pull/2431  #
+    ############################################################
+    - PR_2431.patch
 
 build:
   number: 0
