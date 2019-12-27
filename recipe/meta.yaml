@@ -12,9 +12,9 @@ source:
     ############################################################
     # Apply patch to silence Windows casting warnings.         #
     #                                                          #
-    # xref: https://github.com/WebAssembly/binaryen/pull/2431  #
+    # xref: https://github.com/WebAssembly/binaryen/pull/2449  #
     ############################################################
-    - PR_2431.patch
+    - PR_2449.patch
 
 build:
   number: 0
