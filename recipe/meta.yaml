@@ -23,6 +23,7 @@ requirements:
     - ninja
     - nodejs
     - python
+  host:
 
 test:
   commands:
