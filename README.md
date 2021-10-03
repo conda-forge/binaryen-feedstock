@@ -5,18 +5,97 @@ Home: https://github.com/WebAssembly/binaryen
 
 Package license: Apache 2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/binaryen-feedstock/blob/master/LICENSE.txt)
 
 Summary: Compiler infrastructure and toolchain library for WebAssembly, in C++
-
-
 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/binaryen-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/binaryen-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/binaryen-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/binaryen-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/binaryen-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/binaryen-feedstock/branch/master)
+
+<table>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64_nodejs12</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=linux&configuration=linux_64_nodejs12" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_nodejs14</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=linux&configuration=linux_64_nodejs14" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_nodejs16</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=linux&configuration=linux_64_nodejs16" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_nodejs12</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=osx&configuration=osx_64_nodejs12" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_nodejs14</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=osx&configuration=osx_64_nodejs14" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_nodejs16</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=osx&configuration=osx_64_nodejs16" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_nodejs12</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=win&configuration=win_64_nodejs12" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_nodejs14</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=win&configuration=win_64_nodejs14" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_nodejs16</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=win&configuration=win_64_nodejs16" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -32,6 +111,7 @@ Installing `binaryen` from the `conda-forge` channel can be achieved by adding `
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `binaryen` can be installed with:
@@ -50,6 +130,8 @@ conda search binaryen --channel conda-forge
 About conda-forge
 =================
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
 conda-forge GitHub organization. The conda-forge organization contains one repository
@@ -59,7 +141,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -100,7 +182,13 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@jakirkham](https://github.com/jakirkham/)
+
