@@ -7,10 +7,6 @@ package:
 source:
   url: https://github.com/WebAssembly/binaryen/archive/version_{{ version }}.tar.gz
   sha256: c5ec27c157d3b33ce4360607cc6afe565fa490094237895db2162b3a7d667da2
-  patches:
-    # this fixes an issue where "some toolchains it is necessary to #define __STDC_FORMAT_MACROS before using macros like PRIxPTR"
-    # cf: https://github.com/tensorflow/tensorflow/issues/12998#issuecomment-329179887
-    - gcc_stdmacro.patch  # [linux]
 
 build:
   number: 0
