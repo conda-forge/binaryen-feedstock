@@ -5,7 +5,7 @@ Home: https://github.com/WebAssembly/binaryen
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/binaryen-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/binaryen-feedstock/blob/main/LICENSE.txt)
 
 Summary: Compiler infrastructure and toolchain library for WebAssembly, in C++
 
@@ -20,80 +20,87 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master">
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main">
           </a>
         </summary>
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_nodejs12</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=linux&configuration=linux_64_nodejs12" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_nodejs14</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=linux&configuration=linux_64_nodejs14" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=linux&configuration=linux_64_nodejs14" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_nodejs16</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=linux&configuration=linux_64_nodejs16" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=linux&configuration=linux_64_nodejs16" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_nodejs12</td>
+              <td>linux_64_nodejs17</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=osx&configuration=osx_64_nodejs12" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=linux&configuration=linux_64_nodejs17" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_nodejs14</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=osx&configuration=osx_64_nodejs14" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=osx&configuration=osx_64_nodejs14" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_nodejs16</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=osx&configuration=osx_64_nodejs16" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=osx&configuration=osx_64_nodejs16" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64</td>
+              <td>osx_64_nodejs17</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=osx&configuration=osx_64_nodejs17" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_nodejs12</td>
+              <td>osx_arm64_nodejs16</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=win&configuration=win_64_nodejs12" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_nodejs16" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_nodejs17</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_nodejs17" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_nodejs14</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=win&configuration=win_64_nodejs14" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=win&configuration=win_64_nodejs14" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_nodejs16</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=master&jobName=win&configuration=win_64_nodejs16" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=win&configuration=win_64_nodejs16" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_nodejs17</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=96&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/binaryen-feedstock?branchName=main&jobName=win&configuration=win_64_nodejs17" alt="variant">
                 </a>
               </td>
             </tr>
@@ -137,7 +144,8 @@ conda search binaryen --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
