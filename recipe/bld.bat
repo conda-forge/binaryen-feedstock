@@ -9,6 +9,7 @@ cmake -G "Ninja" ^
     -DBUILD_SHARED_LIBS:BOOL=ON ^
     -DCMAKE_INSTALL_LIBDIR=lib ^
     -DBUILD_TESTS=OFF ^
+    -DENABLE_WERROR=0 ^
     "%SRC_DIR%"
 ninja
 ninja install

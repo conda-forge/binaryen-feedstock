@@ -21,6 +21,7 @@ cmake ${CMAKE_ARGS} -G "Ninja" \
     -DBUILD_SHARED_LIBS:BOOL=ON \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DBUILD_TESTS=OFF \
+    -DENABLE_WERROR=0 \
     ${EXTRA_CMAKE_ARGS} \
     "${SRC_DIR}"
 
