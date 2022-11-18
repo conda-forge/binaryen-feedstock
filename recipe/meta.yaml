@@ -1,4 +1,4 @@
-{% set version = "110" %}
+{% set version = "111" %}
 
 package:
   name: binaryen
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/WebAssembly/binaryen/archive/version_{{ version }}.tar.gz
-  sha256: 0f80250a02b94dd81bdedeae029eb805abf607fcdadcfee5ca8b5e6b77035601
+  sha256: c518b1146713bc2406dd09a1a1b18f31a283f8ac1fe200efa38834dbd95a1997
   patches:
     # this fixes an issue where "some toolchains it is necessary to #define __STDC_FORMAT_MACROS before using macros like PRIxPTR"
     # cf: https://github.com/tensorflow/tensorflow/issues/12998#issuecomment-329179887
