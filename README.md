@@ -1,11 +1,11 @@
-About binaryen
-==============
+About binaryen-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/binaryen-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/WebAssembly/binaryen
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/binaryen-feedstock/blob/main/LICENSE.txt)
 
 Summary: Compiler infrastructure and toolchain library for WebAssembly, in C++
 
