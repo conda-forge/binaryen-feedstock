@@ -25,15 +25,15 @@ requirements:
 
 test:
   commands:
-    - wasm-shell --help
-    - wasm-opt --help
-    - wasm-metadce --help
-    - wasm2js --help
-    - wasm-emscripten-finalize --help
     - wasm-as --help
-    - wasm-dis --help
     - wasm-ctor-eval --help
+    - wasm-dis --help
+    - wasm-emscripten-finalize --help
+    - wasm-metadce --help
+    - wasm-opt --help
     - wasm-reduce --help
+    - wasm-shell --help
+    - wasm2js --help
 
 about:
   home: https://github.com/WebAssembly/binaryen
