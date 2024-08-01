@@ -1,5 +1,17 @@
 {% set version = "118" %}
 
+{% set binaryen_exes = [
+    "wasm-as",
+    "wasm-ctor-eval",
+    "wasm-dis",
+    "wasm-emscripten-finalize",
+    "wasm-metadce",
+    "wasm-opt",
+    "wasm-reduce",
+    "wasm-shell",
+    "wasm2js",
+] %}
+
 package:
   name: binaryen
   version: {{ version }}
@@ -13,7 +25,7 @@ source:
     - gcc_stdmacro.patch  # [linux]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -25,15 +37,11 @@ requirements:
 
 test:
   commands:
-    - wasm-shell --help
-    - wasm-opt --help
-    - wasm-metadce --help
-    - wasm2js --help
-    - wasm-emscripten-finalize --help
-    - wasm-as --help
-    - wasm-dis --help
-    - wasm-ctor-eval --help
-    - wasm-reduce --help
+    {% for exe in binaryen_exes %}
+    - which {{ exe }}   # [unix]
+    - where {{ exe }}   # [win]
+    - {{ exe }} --help  # [build_platform == target_platform]
+    {% endfor %}
 
 about:
   home: https://github.com/WebAssembly/binaryen
