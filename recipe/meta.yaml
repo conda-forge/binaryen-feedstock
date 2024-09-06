@@ -1,4 +1,4 @@
-{% set version = "118" %}
+{% set version = "119" %}
 
 {% set binaryen_exes = [
     "wasm-as",
@@ -18,14 +18,14 @@ package:
 
 source:
   url: https://github.com/WebAssembly/binaryen/archive/version_{{ version }}.tar.gz
-  sha256: 58a2fbad5aa986b52f8044c99fa7780e0a524e3d1bcc4f588ccda62bc33498a7
+  sha256: 9c2614212f628fad451b847ffa0ce2fc59339453f4ea1bacf4417590caa5fc71
   patches:
     # this fixes an issue where "some toolchains it is necessary to #define __STDC_FORMAT_MACROS before using macros like PRIxPTR"
     # cf: https://github.com/tensorflow/tensorflow/issues/12998#issuecomment-329179887
     - gcc_stdmacro.patch  # [linux]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
