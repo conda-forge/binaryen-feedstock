@@ -11,6 +11,14 @@ export EXTRA_CMAKE_ARGS
 
 export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 
+# this fixes an issue where "some toolchains it is necessary to #define __STDC_FORMAT_MACROS before using macros like PRIxPTR"
+# cf: https://github.com/tensorflow/tensorflow/issues/12998#issuecomment-329179887
+if [[ `uname` == 'Linux' ]];
+then
+    export CXXFLAGS="${CXXFLAGS} -D__STDC_FORMAT_MACROS"
+    export CFLAGS="${CFLAGS} -D__STDC_FORMAT_MACROS"
+fi
+
 mkdir "build_${CMAKE_CONFIG}"
 pushd "build_${CMAKE_CONFIG}"
 
