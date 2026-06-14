@@ -1,4 +1,4 @@
-{% set version = "125" %}
+{% set version = "130" %}
 
 {% set binaryen_exes = [
     "wasm-as",
@@ -18,7 +18,7 @@ package:
 
 source:
   url: https://github.com/WebAssembly/binaryen/archive/version_{{ version }}.tar.gz
-  sha256: 36177034ef0f0d826fd7dc9ab9d92ef20190a79d69856f764151ffe9c11d7350
+  sha256: 20d727e7f3011cfe604b8ebdc873edbb4831c6b148209cb15bc2bedcded036ee
 
 build:
   number: 0

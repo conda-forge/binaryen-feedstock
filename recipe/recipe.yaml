@@ -1,0 +1,71 @@
+schema_version: 1
+
+context:
+  version: "130"
+  binaryen_exes:
+    - wasm-as
+    - wasm-ctor-eval
+    - wasm-dis
+    - wasm-emscripten-finalize
+    - wasm-metadce
+    - wasm-opt
+    - wasm-reduce
+    - wasm-shell
+    - wasm2js
+
+package:
+  name: binaryen
+  version: ${{ version }}
+
+source:
+  url: https://github.com/WebAssembly/binaryen/archive/version_${{ version }}.tar.gz
+  sha256: 20d727e7f3011cfe604b8ebdc873edbb4831c6b148209cb15bc2bedcded036ee
+
+build:
+  number: 0
+  script:
+    - if: unix
+      then: build.sh
+    - if: win
+      then: bld.bat
+
+requirements:
+  build:
+    - ${{ compiler("c") }}
+    - ${{ stdlib("c") }}
+    - ${{ compiler("cxx") }}
+    - cmake
+    - ninja
+
+tests:
+  - script:
+      - which wasm-as
+      - which wasm-ctor-eval
+      - which wasm-dis
+      - which wasm-emscripten-finalize
+      - which wasm-metadce
+      - which wasm-opt
+      - which wasm-reduce
+      - which wasm-shell
+      - which wasm2js
+      - wasm-as --help
+      - wasm-ctor-eval --help
+      - wasm-dis --help
+      - wasm-emscripten-finalize --help
+      - wasm-metadce --help
+      - wasm-opt --help
+      - wasm-reduce --help
+      - wasm-shell --help
+      - wasm2js --help
+
+about:
+  homepage: https://github.com/WebAssembly/binaryen
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: Compiler infrastructure and toolchain library for WebAssembly, in C++
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - wolfv
+    - martinRenou
